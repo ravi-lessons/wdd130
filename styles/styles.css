@@ -25,10 +25,12 @@ main {
 main img{
     width: 150px;
     height: auto;
+    margin: 1rem;
 }
 
 main p {
     text-align: center;
+    margin: 1rem;
 }
 
 h1 {
