@@ -1,0 +1,55 @@
+* {
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+div {
+    border: 1px ;
+    background-color: rgb(174, 115, 115);
+    width: auto;
+    padding: 5px;
+}
+
+main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+nav img {
+}
+
+section{
+    margin:10px 0 ;
+    background-color:#ddd;
+    border: 1px;
+    padding: 10px;
+}
+
+section h2{
+    width: 20%;
+    margin: 0;
+}
+
+ul {
+}
+
+section li{
+    width: 400p%;
+    margin: 5px;
+    text-align:left;
+
+}
+
+body{
+    
+}
+
+footer {
+    margin: 100px;
+    border-top: 1px solid;
+    text-align: center;
+}
