@@ -4,7 +4,7 @@
 }
 div {
     border: 1px ;
-    background-color: rgb(50, 175, 200);
+    background-color: rgb(217, 97, 12);
     width: auto;
     padding: 5px;
     }
@@ -34,7 +34,7 @@ h1 {
 
 section section{
     margin:10px 0 ;
-    background-color:skyblue;
+    background-color: rgb(217, 97, 12);
     border: 1px;
     padding: 10px;
 }
@@ -50,7 +50,8 @@ section li{
     text-align:left;
 }
 img {
-    width: 15%;
+    width: 30%;
+    box-shadow: 0 0 30px #333;
 }
 
 footer {
