@@ -7,6 +7,7 @@ div {
     background-color: rgb(217, 97, 12);
     width: auto;
     padding: 5px;
+    align-items: center;/*aligns the items in the center of the div container*/
     }
 
 div img {
@@ -27,14 +28,13 @@ main {
 
 h1 {
     margin: 10px;
-    text-align: center;
 }
 
 
 
 section section{
     margin:10px 0 ;
-    background-color: rgb(217, 97, 12);
+    background-color: rgb(223, 222, 221);
     border: 1px;
     padding: 10px;
 }
@@ -55,7 +55,9 @@ img {
 }
 
 footer {
-    margin: 100px;
     border-top: 1px solid;
     text-align: center;
+        background-color: rgb(217, 97, 12);
+        padding: 5px;
+
 }
