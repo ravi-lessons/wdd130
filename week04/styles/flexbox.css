@@ -19,14 +19,7 @@ body {
     color: #333;
 }
 
-.item1 {
-    min-height: 100px;
-}
-
-.item2 {
-    min-height: 200px;
-}
-
-.item3 {
-    min-height: 300px;
+.item {
+    min-height: 50px;
+    flex: auto;
 }
