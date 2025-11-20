@@ -4,10 +4,13 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body .grid {
+body  {
     font-size: 100%;
-    width: 840px;
-    margin:  0 auto;
+}
+
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 nav {
@@ -46,7 +49,7 @@ main p {
 }
 
 h1 {
-    color: black;
+    color: rgb(3, 59, 104);
     margin: 1rem;
     border-bottom: 1px solid;
 }
@@ -74,7 +77,6 @@ aside img {
 
 
 footer{
-    margin: 15px;
     border-top: 1px solid;
     color: black;
     text-align: center;
