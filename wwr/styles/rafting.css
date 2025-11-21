@@ -17,6 +17,12 @@ body {
     color: var(--primary-color);
     width: auto;
 }
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto; /*limits the page width by combining the above mentioned elements and centering the content on the display using an auto left-right margin*/
+}
+
 header {
     background-color: var(--secondary-color);
     padding: 5px;
@@ -24,11 +30,22 @@ header {
     display: grid;
     grid-template-columns: 1fr 20fr;
     align-items: center;
-
 }
-header, main, footer {
-    width: 840px;
-    margin: 0 auto; /*limits the page width by combining the above mentioned elements and centering the content on the display using an auto left-right margin*/
+header img {
+    border-radius: 10px;
+    margin: 0 0 0 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;    
+}
+
+ li {
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--heading-font);
+    font-size: larger;
 }
 
 h1, h2 {
@@ -37,19 +54,10 @@ h1, h2 {
 }
 
 nav, p, section, article {
-    margin: 5px;
+    margin: 1px;
     padding: 5px;
 }
 
- li {
-    text-decoration: none;
-    list-style: none;
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;    
-}
 
 .hero {
     position: relative;
@@ -71,8 +79,7 @@ ul {
 }
 
 h2 {
-    margin: 5px;
-    background-color: var(--accent1-color);
+    margin: 1px;
     text-align: center;
     padding: 10px;
 }
@@ -110,6 +117,8 @@ h2 {
     padding: 0.5rem;
     background-color: #efecec;
     color: #333;
+    border-radius: 8px;/*curves the frame edges*/
+    margin: 0 2px 0 0; /*top right bottom left*/
 }
 
 
@@ -117,4 +126,5 @@ footer {
     display: flex;
     justify-content: end;
     align-content: space-evenly;
+    background-color: var(--accent1-color);
 }
