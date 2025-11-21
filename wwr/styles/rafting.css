@@ -20,10 +20,15 @@ body {
 header {
     background-color: var(--secondary-color);
     padding: 5px;
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    align-items: center;
+
 }
 header, main, footer {
     width: 840px;
-    margin:0 auto; /*limits the page width by combining the above mentioned elements and centering the content on the display using an auto left-right margin*/
+    margin: 0 auto; /*limits the page width by combining the above mentioned elements and centering the content on the display using an auto left-right margin*/
 }
 
 h1, h2 {
@@ -36,8 +41,14 @@ nav, p, section, article {
     padding: 5px;
 }
 
-.socialmedia a {
+ li {
     text-decoration: none;
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;    
 }
 
 .hero {
@@ -60,21 +71,50 @@ nav, p, section, article {
 }
 
 h2 {
-    background-color: #e7d404;
+    margin: 5px;
+    background-color: var(--accent1-color);
     text-align: center;
     padding: 10px;
 }
 
 .hero article {
     position: absolute;
-    top: 60%;
-    background-color: #e7d404;
+    top: 74%;
+    background-color: var(--accent1-color);
     opacity: 0.7;
-    
 }
 
 .hero article img {
     float: right;
     width: 150px;
     margin-top: 20px;
+}
+
+.history {
+    max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative; /* Avoid absolute unless necessary */
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+
+}
+
+.adventure {
+    display: flex;
+    margin-left: 0;
+}
+
+.game {
+      width: 400px;
+    padding: 0.5rem;
+    background-color: #efecec;
+    color: #333;
+}
+
+
+footer {
+    display: flex;
+    justify-content: end;
+    align-content: space-evenly;
 }
