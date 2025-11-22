@@ -24,7 +24,6 @@ header, main, footer {
 }
 
 header {
-    background-color: var(--secondary-color);
     padding: 5px;
     background-color: var(--accent1-color);
     display: grid;
@@ -125,6 +124,9 @@ h2 {
     margin: 0 2px 0 0; /*top right bottom left*/
 }
 
+.socialmedia a{
+    text-decoration: none;
+}
 
 footer {
     display: flex;
