@@ -104,7 +104,11 @@ h2 {
   position: relative; /* Avoid absolute unless necessary */
   display: grid;
   grid-template-columns: repeat(3, 2fr);
+  grid-column: 1/4;
 
+}
+.history h2 {
+    grid-column: 1/4;
 }
 
 .adventure {
