@@ -8,12 +8,18 @@ div {
     width: auto;
     padding: 5px;
     align-items: center;/*aligns the items in the center of the div container*/
+    justify-content: space-around;
     }
 
 div img {
     margin: 0;
     width: 15%;
-
+    padding: 5px;
+    border-radius: 8px;
+    
+}
+div a {
+    text-decoration: none;
 }
 
 .sidebar {
@@ -48,6 +54,7 @@ section li{
     width: 400%;
     margin: 5px;
     text-align:left;
+    list-style: none;
 }
 img {
     width: 30%;

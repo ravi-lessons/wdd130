@@ -1,0 +1,28 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid rgb(140, 140, 140);
+    letter-spacing: 2px;
+}
+
+th, td {
+border: 1px solid rgb(150, 150, 150);
+padding: 8px 12px;
+text-align: center;
+}
+
+tfoot tr, thead tr {
+    background-color: black;
+    color: aliceblue;
+    font-weight: 700;
+
+}
+/* The css below gives the selected color to any even row of the table */
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+ /* hover effect */
+ tr:hover {
+    background-color: #2a2e2f;
+ }
+
