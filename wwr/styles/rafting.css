@@ -46,6 +46,9 @@ ul {
     font-family: var(--heading-font);
     font-size: larger;
 }
+li:hover{
+    background-color: aqua;
+}
 
 h1, h2 {
     font-family: var(--heading-font);

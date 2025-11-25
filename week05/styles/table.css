@@ -23,6 +23,6 @@ tr:nth-child(even) {
 }
  /* hover effect */
  tr:hover {
-    background-color: #2a2e2f;
+    background-color: #1a64ec46;
  }
 
