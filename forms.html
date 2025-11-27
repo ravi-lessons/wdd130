@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <form>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+    <p>Choose your favorite web language</p>
+    <form>
+        <label for="html">HTML </label>
+        <input type="radio" id="html" name="html"><br>
+
+        <label for="css">CSS</label>
+        <input type="radio" id="css" name="css"> <br>
+
+        <label for="java">Javascript</label>
+        <input type="radio" id="java" name="java">
+    </form>
+
+    <form action="">
+        <p>Select all that applies</p>
+        <label for="vehicle1">Bike</label>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+        <label for="vehicle2">Car</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+
+        <label for="vehicle3">Bus</label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Bus">
+
+    </form>
+    <form action="/action_page.php">
+        <label for="fname">*First name:</label><br>
+        <input type="text" id="fname" name="fname" value="" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="" placeholder="enter name"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
