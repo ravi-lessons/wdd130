@@ -5,46 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forms</title>
+    <link rel="stylesheet" href="forms.css">
 </head>
 
 <body>
-    <form>
-        <label for="fname">First Name</label><br>
-        <input type="text" id="fname" name="fname"><br>
+    <form class="styled-form">
+        <h2>Registration Form</h2>
 
-        <label for="lname">Last Name</label><br>
-        <input type="text" id="lname" name="lname">
-    </form>
-    <p>Choose your favorite web language</p>
-    <form>
-        <label for="html">HTML </label>
-        <input type="radio" id="html" name="html"><br>
+        <!-- Text input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
 
-        <label for="css">CSS</label>
-        <input type="radio" id="css" name="css"> <br>
+        <!-- Radio buttons -->
+        <p>Gender:</p>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
 
-        <label for="java">Javascript</label>
-        <input type="radio" id="java" name="java">
-    </form>
+        <!-- Checkboxes -->
+        <p>Interests:</p>
+        <label><input type="checkbox" name="interest" value="sports"> Sports</label>
+        <label><input type="checkbox" name="interest" value="music"> Music</label>
+        <label><input type="checkbox" name="interest" value="travel"> Travel</label>
 
-    <form action="">
-        <p>Select all that applies</p>
-        <label for="vehicle1">Bike</label>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-
-        <label for="vehicle2">Car</label>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-
-        <label for="vehicle3">Bus</label>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Bus">
-
-    </form>
-    <form action="/action_page.php">
-        <label for="fname">*First name:</label><br>
-        <input type="text" id="fname" name="fname" value="" required><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="" placeholder="enter name"><br><br>
-        <input type="submit" value="Submit">
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
     </form>
 
 </body>

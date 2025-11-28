@@ -5,36 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><poll-form></poll-form></title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
 
-    <header></header>
+    <header>
+        <h1>WDD 130 | HTML Form-USer Poll</h1>
+    </header>
     <main>
         <form action="">
-            <label for="fullname">Name</label>
-            <input type="text" id="fullname" name="fullname" required><br>
+            <legend>Contact Information</legend>
+            <fieldset>
+                <div class="form-item column2">
+                    <label for="fullname">Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-item column2">
 
-            <label for="useremail">Email</label>
-            <input type="email" id="useremail" name="useremail" required><br>
-
-            <label for="browser">What is your favorite browser?</label>
-            <select name="browser" id="browser">
-                <option value="googlechrome">Google Chrome</option>
-                <option value="mozilla">Mozilla Firefox</option>
-                <option value="edge">Microsoft Edge</option>
-            </select><br>
-
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" name="pet" id="pet"><br>
-
-            <label for="feedback">List Places you have lived</label>
-            <textarea name="feedback" id="feedback" placeholder="Rayfield Jos, Victoria Island Lagos, Maitama Abuja"
-                rows="5"></textarea><br>
-            <button type="submit">Submit poll</button>
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+            </fieldset>
+            <legend>Questions</legend>
+            <fieldset>
+                <div class=" column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="googlechrome">Google Chrome</option>
+                        <option value="mozilla">Mozilla Firefox</option>
+                        <option value="edge">Microsoft Edge</option>
+                </div>
+                </select>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" name="pet" id="pet">
+                </div>
+                <label for="feedback">List Places you have lived:</label>
+                <textarea name="feedback" id="feedback" placeholder="Rayfield Jos, Victoria Island Lagos, Maitama Abuja"
+                    rows="5"></textarea>
+                <button type="submit">Submit poll</button>
+            </fieldset>
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        ©2025 | HTML Form - User | Terese Terkuma
+    </footer>
 </body>
 
 </html>
