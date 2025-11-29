@@ -170,8 +170,8 @@ max-width: 100%;
 
 
   form {
-padding: 20px;
-margin: 5px;
+padding: 10px;
+margin: 10px;
 }
 
 
@@ -183,7 +183,7 @@ form input[type="checkbox"] {
 .box label  {
     display: grid;
     grid-template-columns: 100px 2fr;
-    margin: 5px;
+    margin: 10px;
 }
 
 input, select, button {
@@ -198,7 +198,8 @@ textarea {
 .purpose {
    display: grid;
     grid-template-columns: 100px 2fr;
-    margin: 5px;    
+    padding: 10px;
+
   
 
 }
@@ -209,6 +210,7 @@ textarea {
         box-shadow: rgb(0 0 0 / 10%);
         width: 400px;
         cursor: pointer;
+        margin-top: 20px;
     }
 
 
