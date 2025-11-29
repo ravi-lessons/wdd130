@@ -90,7 +90,7 @@ footer {
 }
 
 .column1 {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr  1fr;
 }
 .column2 {
     grid-template-columns: 1fr 2fr;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Quiz Form</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <main class="box">
+        <h1>✔ Basic Html and CSS Quiz</h1>
+        <form action="" class="box">
+            <div class="quiz-item box">
+                <label for="q1">1. What does HTML stand for?</label>
+                <input type="text" id="q1" name="q1">
+            </div>
+            <div class="quiz-item box">
+                <label for="q2">2. Write the HTML code to create a hyperlink to "https://example.com"</label>
+                <textarea id="q2" name="q2"></textarea>
+            </div>
+            <div class="quiz-item box">
+                <label for="q3">3. Which if these is a valid CSS property?</label>
+                <select name="q3" id="q3">
+                    <option value="" selected disabled>Choose...</option>
+                    <option value="font-size">font-size</option>
+                    <option value="colorize">colorize</option>
+                    <option value="background-shade">background-shade</option>
+                </select>
+            </div>
+
+            <div class="quiz-item box">
+                <label for="q4">4. In CSS what is the maximum value for opacity?</label>
+                <input type="number" name="q4" id="q4" min="0" max="1" step="0.1">
+            </div>
+            <div class="quiz-item box">
+                <label for="q5">5. Which of the values below is equivalent to 1rem?</label>
+                <code class="box">1px; 10px, 16px;</code>
+                <input type="number" name="q5" id="q5">
+            </div>
+            <div class=" quiz-item box">
+                <button type="submit" value="Submit Quiz">Submit Quiz</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
