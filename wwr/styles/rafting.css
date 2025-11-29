@@ -47,7 +47,7 @@ ul {
     font-size: larger;
 }
 li:hover{
-    background-color: aqua;
+    background-color: rgb(146, 188, 212);
 }
 
 h1, h2 {
@@ -144,4 +144,48 @@ footer {
     justify-content: end;
     align-content: space-evenly;
     background-color: var(--accent1-color);
+}
+
+/* contact us css */
+address {
+    margin: 3px;
+    text-align: center;
+}
+  .map-form {
+max-width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+
+  }
+
+  form {
+padding: 10px;
+
+}
+
+.staff {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    border: 1px solid rgb(0 0 0 / 10%);
+    margin: 5px;
+}
+ .staff h2 {
+    grid-column: 1/5;
+ }
+
+
+.employee {
+    width: 280px;
+    padding: 0.5rem;
+    color: #333;
+    border-radius: 8px;/*curves the frame edges*/
+    margin: 0 2px 0 0; /*top right bottom left*/
+}
+
+figure img{
+box-shadow:5px 5px 10px gray;
+border-radius: 5px;
 }
