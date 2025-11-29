@@ -23,7 +23,7 @@ form {
     }
 
 input, textarea, select, button {
-    padding: 0.75rem;
+    padding: 0.5rem;
     min-width: 300px;
 }
 
