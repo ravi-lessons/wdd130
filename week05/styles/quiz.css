@@ -35,7 +35,7 @@ input, textarea, select, button {
     .box {
     margin: 5px;
     border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
+    padding: 5px;
     }
 
     .quiz-item {
