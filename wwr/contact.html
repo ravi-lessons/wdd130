@@ -35,25 +35,32 @@
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.5239250788595!2d8.549186999999995!3d7.734115000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105081a28e5e0801%3A0xb149401b0177e691!2sRiver%20Benue!5e0!3m2!1sen!2sng!4v1764416909677!5m2!1sen!2sng"
-                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <form action="">
-                <div><label>Name <input type="text" id="fullname" name="fullname"></label></div>
+                <div class="box"><label>Name <input type="text" id="fullname" name="fullname"></label></div>
 
-                <div><label>Email <input type="email" id="email" name="email"></label></div>
+                <div class="box"><label>Email <input type="email" id="email" name="email"></label></div>
+                <div class="box"></div>
 
-                <div><label>Message Purpose<input type="radio" name="general" value="general"> General Inquiry</label>
-                    <label><input type="radio" name="reservation" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="suggestion" value="suggestion"> Suggestion</label>
+                <div class="purpose">
+                    <p>Message Purpose</p>
+                    <label for="purpose"><input type="radio" name="purpose" value="general_inquiry">General
+                        Inquiry <br>
+                        <input type="radio" name="purpose" value="reservation_question">Reservation
+                        Question <br>
+                        <input type="radio" name="purpose" value="website_question">Website Suggestion
+                    </label>
                 </div>
 
                 <div>
-                    <label>Message <textarea name="message" id="message" placeholder="type here"></textarea></label>
+                    <label>Message <br><textarea name="message" id="message" placeholder="type here"></textarea></label>
                 </div>
 
                 <div>
-                    <label> <input type="checkbox" id="subscribe" name="subscribe">Please Subscribe me to the monthly
+                    <label> <input type="checkbox" id="subscribe" name="subscribe">Please Subscribe me to
+                        the monthly
                         newsletter
                     </label>
                 </div>
