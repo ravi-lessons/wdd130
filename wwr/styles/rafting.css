@@ -121,7 +121,7 @@ h2 {
 }
 
 .game {
-      width: 250;
+    width: 250px;
     padding: 0.5rem;
     background-color: var(--secondary-color);
     color: #333;
@@ -207,7 +207,6 @@ textarea {
  button {
         background-color: blue;
         color: #fff;
-        box-shadow: rgb(0 0 0 / 10%);
         width: 400px;
         cursor: pointer;
         margin-top: 20px;
