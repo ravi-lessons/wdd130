@@ -8,10 +8,13 @@ main {
     max-width: 500px;
     background-color: white;
     color: rgb(32, 30, 30);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
     padding: .5px;
+    font-weight: 700;
+    color: navy;
 }
 
 form {
@@ -29,6 +32,9 @@ input, textarea, select, button {
         background-color: #000;
         color: #fff;
         max-width: 250px;
+        margin: 5px 20px 5px ;
+        padding: 10px;
+        text-align: center;
     }
 
 
