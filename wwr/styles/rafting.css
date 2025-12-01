@@ -239,3 +239,35 @@ textarea {
 box-shadow:5px 5px 10px gray;
 border-radius: 5px;
 }
+
+/* Index page css */
+.index-hero {
+    position: relative;
+}
+.index-hero img{
+     display: block;
+    width: 100%;
+    height: auto;
+}
+.index-hero h1{
+ position: absolute;
+ width: 100%;
+  top: 25%;
+  padding: 10px;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 7rem;
+  font-weight: bold;
+    color: red;
+}
+.index-hero p {
+    position: absolute;
+  top: 25%;          /* place below the heading */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;        /* narrower than heading */
+    color: red;
+
+}
