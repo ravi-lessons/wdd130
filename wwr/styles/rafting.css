@@ -346,12 +346,12 @@ border-radius: 5px;
     grid-template-columns: repeat(3, 2fr);
     gap: 5px;
     text-align: center;
-    background-color: black;
+  background: black;   
     
 }
 .offer{
     margin:10px;
-    width: 250px;
+    width: 255px;
     color: #333;
     border-radius: 8px;/*curves the frame edges*/
     border-bottom-right-radius: 8px;/*curves the frame edges*/
@@ -360,9 +360,17 @@ border-radius: 5px;
     }
 .offer img{
     width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 figcaption{
     padding: 5px;
     text-align: left;
+    font-size: small;
 }
-
+figcaption a{
+    text-decoration: none;
+}
+ figcaption a:hover{
+    text-decoration: underline;
+ }
