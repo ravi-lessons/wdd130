@@ -7,9 +7,14 @@
 :root {
     --primary-color: #0e0e0e;
     --secondary-color: #efecec;
-    --accent1-color: #90e0ef;
+    --accent1-color: #f0eeee;
+     --accent2-color: yellow;
     --heading-font: "Times New Roman", "Georgia", "Serif";
     --body-font: Ariel, Helvetica, sans-serif;
+     --blue-button-color: #0073e6;
+    --blue-button-hover-color: #005bb5;
+
+
 }
 
 body {
@@ -19,7 +24,7 @@ body {
 }
 
 header, main, footer {
-    width: 840px;
+    width: 900px;
     margin: 0 auto; /*limits the page width by combining the above mentioned elements and centering the content on the display using an auto left-right margin*/
 }
 
@@ -29,6 +34,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 20fr;
     align-items: center;
+    border: 1px solid rgb(0 0 0 / 10%);
 }
 header img {
     border-radius: 10px;
@@ -78,7 +84,7 @@ nav, p, section, article {
   padding: 16px;
   text-align: center;
   opacity: 0.7;
-  background-color: var(--accent1-color);
+  background-color: var(--accent2-color);
 }
 
 h2 {
@@ -86,11 +92,12 @@ h2 {
     text-align: center;
     padding: 10px;
 }
+/* about us page css */
 
 .hero article {
     position: absolute;
     top: 74%;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     opacity: 0.7;
 }
 
@@ -291,21 +298,22 @@ border-radius: 5px;
 
 .newsletter input{
     margin: 5px;
+    width: 80%;
 }
 
 .newsletter button {
   padding: 0.5rem 1rem;
-  background: #0073e6;
+  background: var(--blue-button-color);
   color: white;
   border: none;
   border-radius: 3px;
-  margin-left: 3rem;
+  margin-left: 3.5rem;
   cursor: pointer;
-  width: 50%;
+  width: 80%;
 }
 
 .newsletter button:hover {
-  background: #005bb5;
+  background: var(--blue-button-hover-color);
 }
 
 .invitation {
@@ -344,14 +352,14 @@ border-radius: 5px;
 .offerings {
   display: grid;
     grid-template-columns: repeat(3, 2fr);
-    gap: 5px;
+    gap: 1px;
     text-align: center;
-  background: black;   
+    background: black;   
     
 }
 .offer{
-    margin:10px;
-    width: 255px;
+    margin:5px 2px;
+    width: 295px;
     color: #333;
     border-radius: 8px;/*curves the frame edges*/
     border-bottom-right-radius: 8px;/*curves the frame edges*/
@@ -368,6 +376,10 @@ figcaption{
     text-align: left;
     font-size: small;
 }
+
+figcaption h4{
+    margin: 10px;
+}
 figcaption a{
     text-decoration: none;
 }
@@ -376,4 +388,47 @@ figcaption a{
  }
 
  /* trips page css */
- 
+ .choose-river {
+/* background: linear-gradient(to right, black, purple); */
+background: rgb(2, 2, 88);
+    padding: 80px;
+ }
+ .choose-river h1{
+    text-align: left;
+    color: #fff;
+    font-weight: bolder;
+ }
+ .locations-note{
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 5px;
+
+}
+.sections-unit {
+    border-bottom:1px solid rgb(2, 2, 88);
+    margin: 20px 0;
+}
+.side-caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    background-color: rgb(2, 2, 88);
+    color: var(--accent1-color);
+    }
+.side-caption img{
+    width: 50%;
+}
+.trips {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 25px;
+
+}
+.trips figure{
+    width: 100%;
+    box-shadow: 1px 1px 5px gray;
+}
