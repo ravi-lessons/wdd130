@@ -408,7 +408,8 @@ background: rgb(2, 2, 88);
 }
 .sections-unit {
     border-bottom:1px solid rgb(2, 2, 88);
-    margin: 20px 0;
+    margin: 0x 0;
+    clear: both;
 }
 .side-caption {
     display: flex;
@@ -421,14 +422,48 @@ background: rgb(2, 2, 88);
 .side-caption img{
     width: 50%;
 }
-.trips {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 25px;
+.book-now {
+margin: 10px;
+
+    
+}
+.book-now a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    background-color: rgb(194, 9, 9);
+    border-radius: 10%;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    float: right;
+}
+
+.book-now a:hover{
+        background: rgb(168, 0, 0);
 
 }
-.trips figure{
-    width: 100%;
-    box-shadow: 1px 1px 5px gray;
+.tabular{
+    clear: both;
+    background-color: #90e0ef;
+}
+.tabular table {
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid rgb(140, 140, 140);
+    letter-spacing: 2px;
+}
+
+th, td {
+border: 1px solid rgb(150, 150, 150);
+padding: 8px 12px;
+text-align: center;
+}
+
+tfoot tr, thead tr {
+    background-color: black;
+    color: aliceblue;
+    font-weight: 700;
 }
