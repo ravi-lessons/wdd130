@@ -540,6 +540,10 @@ tr:nth-child(even) {
     font-size: x-large;
 }
 
-.rivers-hero article{
-    margin:30px ;
+.flex-rivers {
+    display: flex;
+    justify-content: space-evenly;
+    border: 5px solid rgb(168 0 0 / 50%);
+    background-color: rgb(240, 237, 237);
+    padding: 20px;
 }
