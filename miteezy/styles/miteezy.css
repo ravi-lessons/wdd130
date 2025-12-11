@@ -1,0 +1,115 @@
+
+
+/* primary brand colors : orange (#F931E), white, dark brown or wood texture (#4B2E1E)
+
+Accent colors: sun yellow(#FFD700) for highlights, hover effects, 
+Light gray (#F0F0F0) for subtle background or section dividers and borders.
+dark gray (#333333) for text or footer areas to maintain readability
+earthy tone wood brown(#4B2E1E) decorative elements
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f88b0f;
+    --primary-color2: #8c3a0e;
+    --first-font-color: #efecec;
+    --second-font-color: #333333;
+     --accent-color: #ffd700;
+    --heading-font: "Times New Roman", "Georgia", "Serif";
+    --body-font: Ariel, Helvetica, sans-serif;
+     --blue-button-color: #0073e6;
+    --blue-button-hover-color: #005bb5;
+    
+}
+body{
+    font-family: var(--body-font);
+    color: var(--second-font-color);
+    width: auto;
+    }
+
+header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    font-family: var(--heading-font);
+    font-size: larger;
+    padding: 20px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;    
+}
+li:hover{
+        transform: scale(1.1); 
+    /* filter: brightness(1.2); changes the brightness of the hovered content */
+}
+
+.hero {
+    position: relative;
+    background-image: url("../images/index-background2.jpg");
+    background-size:cover ;
+    min-height: 100vh;
+}
+
+ .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(9, 10, 10, 0.5); /* blue with 50% opacity */
+  z-index: 1;
+} 
+.hero h1{
+    width: 400px;
+    top: 50px;
+    left: 10%;
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    margin: 30px 10px;
+    color: var(--first-font-color);
+    z-index: 2;
+}
+
+.hero p{
+    position: relative;
+    width: 600px;
+    top: 60px;
+    left: 10%;
+    color: white;
+    font-weight: bolder;
+    justify-content: center;
+    margin-left: 20px;
+    z-index: 2;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+
+}
+
+main{
+    width: 800px;
+    margin: 0 auto;
+}
+
+footer{
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+
+}
