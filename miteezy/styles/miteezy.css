@@ -30,7 +30,7 @@ earthy tone wood brown(#4B2E1E) decorative elements
 /* Smartphones (portrait and small devices) */
 @media (max-width: 480px) {
   /* Styles for most smartphones */
-     figure {
+     .sales-figure {
             flex-direction: column;
             /* caption goes below image */
             align-items: center;
