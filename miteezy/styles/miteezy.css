@@ -64,7 +64,7 @@ body{
     max-width: 100%;
     font-family: var(--body-font);
     color: var(--second-font-color);
-    width: auto;
+    line-height: 1.4
     }
 
 header{
