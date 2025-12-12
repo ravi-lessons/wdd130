@@ -38,16 +38,42 @@ earthy tone wood brown(#4B2E1E) decorative elements
             text-align: center;
             /* center caption text */
         }
+          header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 /* Large smartphones / small tablets */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* Styles for bigger phones and phablets */
+
+  .sales-figure {
+            flex-direction: column;
+            /* caption goes below image */
+            /* center both */
+            /* center caption text */
+        }
+        .sales-figure img {
+            max-width: 100%;
+        }
+        
 }
 
 /* Tablets (portrait and landscape) */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Styles for iPads and similar tablets */
+    .sales-figure {
+            flex-direction: column;
+            /* caption goes below image */
+            align-items: center;
+            /* center both */
+            text-align: center;
+            /* center caption text */
+        }
 }
 
 /* Small laptops / desktops */
@@ -72,19 +98,19 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     font-family: var(--heading-font);
     font-size: larger;
-    padding: 2px;
+    padding: 1rem;
     background-color: var(--primary-color);
     z-index: 1000;
 }
 
-header ul{
+nav ul{
     display: flex;
-    justify-content: space-around;
+    gap: 3rem;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -96,6 +122,7 @@ main{
 
 a{
     text-decoration: none;    
+    color: #fff;
 }
  header li:hover{
         transform: scale(1.1); 
@@ -149,13 +176,12 @@ a{
     max-width: 400%;
     margin: 0 auto;
     display: flex;
-    margin-top: 5px;
     background-color: var(--primary-color);
     color: black;
     box-sizing: border-box;
 }
 .sales-figure img{
-    width: 50%;
+    max-width: 1000%;
 }
 .sales-figure figcaption{
     padding: 25px;
@@ -163,7 +189,6 @@ a{
 }
 .sales-figure h2{
     max-width: 400px;
-    margin: 5px  0;
     font-weight: bolder;
     font-size: 2.5em;
 }
@@ -176,6 +201,7 @@ a{
     width: 100%;
     line-height: 1.8;
     margin: 0 10px;
+    margin-bottom: 20px;
 }
 
 .products a {
@@ -184,7 +210,8 @@ a{
     border: 1px solid white;
     border-radius: 5px;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
+    margin: 20px;
     font-family: var(--body-font);
 }
 
