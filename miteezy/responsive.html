@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage Demo</title>
+    <style>
+        /* Base styles (apply everywhere) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        figure {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            color: #333;
+        }
+
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Smartphones (≤480px) */
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            figure {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+
+            figcaption {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Tablets (481px–1024px) */
+        @media (min-width: 481px) and (max-width: 1024px) {
+            nav ul {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            figure {
+                flex-direction: row;
+            }
+        }
+
+        /* Desktops (≥1025px) */
+        @media (min-width: 1025px) {
+            nav ul {
+                justify-content: flex-start;
+            }
+
+            figure {
+                flex-direction: row;
+                gap: 2rem;
+            }
+
+            figcaption {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Responsive Webpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome</h2>
+        <p>This is a demo of a responsive webpage that adapts to smartphones, tablets, and desktops.</p>
+
+        <figure>
+            <img src="images/isaac-installing.jpg" alt="Sample image">
+            <figcaption>This caption moves below the image on mobile, beside it on larger screens.</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Responsive Site</p>
+    </footer>
+</body>
+
+</html>

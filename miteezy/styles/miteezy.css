@@ -26,6 +26,40 @@ earthy tone wood brown(#4B2E1E) decorative elements
     --blue-button-hover-color: #005bb5;
     
 }
+
+/* Smartphones (portrait and small devices) */
+@media (max-width: 480px) {
+  /* Styles for most smartphones */
+     figure {
+            flex-direction: column;
+            /* caption goes below image */
+            align-items: center;
+            /* center both */
+            text-align: center;
+            /* center caption text */
+        }
+}
+
+/* Large smartphones / small tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Styles for bigger phones and phablets */
+}
+
+/* Tablets (portrait and landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for iPads and similar tablets */
+}
+
+/* Small laptops / desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Styles for ultrabooks, smaller monitors */
+}
+
+/* Large desktops and wide screens */
+@media (min-width: 1281px) {
+  /* Styles for big monitors */
+}
+
 body{
     max-width: 100%;
     font-family: var(--body-font);
@@ -57,8 +91,7 @@ header ul{
 }
 
 main{
-    max-width: 100%;
-    margin: 0 auto;
+    padding: 1rem;
 }
 
 a{
@@ -113,7 +146,7 @@ a{
 }
 
 .sales-figure {
-    max-width: 100%;
+    max-width: 400%;
     margin: 0 auto;
     display: flex;
     margin-top: 5px;
