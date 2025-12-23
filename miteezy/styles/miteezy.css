@@ -61,6 +61,8 @@ earthy tone wood brown(#4B2E1E) decorative elements
         .sales-figure img {
             max-width: 100%;
         }
+
+
         
 }
 
@@ -78,7 +80,11 @@ earthy tone wood brown(#4B2E1E) decorative elements
 
 /* Small laptops / desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
-  /* Styles for ultrabooks, smaller monitors */
+    .hero h1{
+            top: 10%;
+            left: 0;
+            color: #000;
+        }
 }
 
 /* Large desktops and wide screens */
@@ -110,7 +116,7 @@ header{
 
 nav ul{
     display: flex;
-    gap: 3rem;
+    gap: 7rem;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -122,7 +128,7 @@ main{
 
 a{
     text-decoration: none;    
-    color: #fff;
+    color: #000;
 }
  header li:hover{
         transform: scale(1.1); 
@@ -220,7 +226,7 @@ a{
 }
 
 .solution{
-width: 50%;
+width: 70%;
 margin: 20px auto;
 font-family: var(--heading-font);
 
@@ -237,6 +243,54 @@ font-family: var(--heading-font);
     text-align: center;
     line-height: 1.5;
     font-size: 1.3em;
+}
+
+.company-culture {
+    margin: 10px;
+    position: relative;
+    background-image: url("../images/index-background2.jpg");
+    background-size:cover ;
+    min-height: 60vh;
+    padding: 10%;
+}
+.company-culture::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(39, 39, 39, 0.5); /* blue with 50% opacity */
+  z-index: 1;
+}
+.company-culture h3{
+    position: relative;
+    color: var(--first-font-color);
+    z-index: 2;
+}
+.culture-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 1rem;
+    margin: 0 auto;
+}
+.culture-item {
+    opacity:0.3;
+    background: var(--primary-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+            display: flex;
+            flex-direction: column;
+            opacity: 0.9;
+            padding: 1rem;
+            position: relative;
+            z-index: 2;
+            justify-content: center;
+            text-align: center;
+}
+.culture-item h4{
+    text-align: center;
 }
 
 footer{
